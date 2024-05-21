@@ -1,1 +1,8 @@
+# Ignorar log.txt específicamente
 log.txt
+
+# Ignorar todos los archivos y directorios
+*
+
+# Excepciones: No ignorar .gitignore y otros archivos específicos
+!.gitignore
