@@ -1,5 +1,0 @@
-2024-05-14 19:28:37 - Se obtuvo el token de autenticación: get_authentication_token Respuesta HTTP: 
-2024-05-14 19:29:22 - Se obtuvo el token de autenticación: get_authentication_token Respuesta HTTP: 200
-2024-05-14 19:29:34 - Se obtuvo el token de autenticación: get_authentication_token Respuesta HTTP: 200
-2024-05-14 19:29:43 - Se obtuvo el token de autenticación: get_authentication_token 
-2024-05-14 19:30:00 - Se obtuvo el token de autenticación: get_authentication_token Respuesta HTTP: 200
