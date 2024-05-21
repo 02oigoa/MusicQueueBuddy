@@ -1,0 +1,19 @@
+version: '3'
+name: "spotily-web"
+
+services:
+  web:
+    build: .
+    ports:
+      - "8082:80" # your port
+    volumes:
+      - /your_folder:/var/www/html
+
+
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: your_password # your db_password
+      MYSQL_DATABASE: your_db # your db_name
+    ports:
+      - "3308:3306"  # your port

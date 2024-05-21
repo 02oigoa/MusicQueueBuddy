@@ -1,0 +1,202 @@
+body{
+    background-color: #000000;
+    overflow-y: hidden; /* Evita el scroll vertical */
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 20% 80%; 
+    column-gap: 10px;
+    padding: 10px;
+    height: 100vh; /* Ocupa toda la altura del viewport */
+    margin-top: 10px;
+
+}
+
+.bloque_menu_izquierda{
+    background-color: #121212;
+    height: 100%;
+    border-radius: 25px;
+    padding: 0px 10px 10px 10px;
+    color: #FFFFFF; 
+    max-height: calc(100vh - 100px);
+    overflow-y: auto; 
+}
+
+.bloque_central{
+    background-color: #121212;
+    height: 100%;
+    border-radius: 25px;
+    padding: 0px 10px 10px 10px;
+    color: #FFFFFF; 
+    overflow-y: auto; /* Habilita el desplazamiento vertical si el contenido excede la altura */
+    position: relative;
+    height: calc(100vh - 100px); /* Ajusta según el tamaño del padding */
+}
+
+.arriba {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    padding: 10px;
+    color: #A7A7A7;
+    z-index: 1; /* Asegura que los elementos anclados estén por encima del contenido desplazable */
+}
+
+.arriba-queue {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    z-index: 1; 
+}
+
+
+.bloque_central > div > div {
+    margin-top: 0px; /* Ajusta según la altura de los elementos anclados */
+    padding-top: 0px; /* Ajusta el espacio entre los elementos anclados y el contenido desplazable */
+    overflow-y: auto;
+    max-height: calc(100% - 120px); /* Ajusta según la altura de los elementos anclados */
+}
+
+.busquador input {
+    background-color: #242424;
+    padding: 6px 18px;
+    border-radius: 500px;
+    height: 48px;
+    width: 95%;
+    color: white !important;
+    
+}
+
+.busqueda button {
+    background-color: #242424;
+    padding: 6px 18px;
+    border-radius: 500px;
+    color: white !important;
+
+}
+
+.header_resultados{
+    display: grid;
+    grid-template-columns: 10% 50% 30% 10%; 
+    padding: 10px 10px 0px 10px;
+    color: #A7A7A7 !important;
+}
+
+hr.separador{
+    border: 1px solid #A7A7A7 !important;
+}
+
+
+
+.resultados_bloque{
+    display: grid;
+    grid-template-columns: 10% 50% 30% 10%; 
+    padding: 10px;
+    color: #A7A7A7 !important;
+    align-items: center; /* Centra verticalmente los elementos */
+
+}
+
+.irudia-izena {
+    /*display: inline-block;*/
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    margin-right: 10px; /* Ajusta el margen derecho */
+}
+  
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+  
+.cancion{
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.artista {
+    font-family: Arial, sans-serif;
+    font-size: 15px !important;
+    color: #a7a7a7ad !important;
+
+}
+
+.cancion-queue{
+    font-family: Arial, sans-serif;
+    font-size: 15px !important;
+    color: white;
+}
+.artista-queue {
+    font-family: Arial, sans-serif;
+    font-size: 10px !important;
+    color: #a7a7a7ad !important;
+
+}
+
+
+.plus-boton {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Color azul */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.plus-boton:hover {
+    background-color: #0056b3; /* Color azul más oscuro al pasar el ratón */
+}
+
+/* Estilos para tabletas y móviles */
+@media (max-width: 768px) {
+    body{
+        overflow-y: auto;
+        font-size: 14px;
+
+    }
+    
+    .container{
+        display: block;
+        padding: 10px;
+        height: 100vh; /* Ocupa toda la altura del viewport */
+        margin-top: 10px;
+    }
+
+    .bloque_menu_izquierda{
+        max-height: 50%;
+        margin-bottom: 10%;
+    }
+    
+    .resultados_bloque{
+        display: grid;
+        grid-template-columns: 10% 50% 30% 10%; 
+        padding: 10px;
+        color: #A7A7A7 !important;
+        align-items: center; /* Centra verticalmente los elementos */
+    
+    }
+    
+    .plus-boton {
+        font-size: 10px;
+        padding: 5px 10px;
+        background-color: #007bff; /* Color azul */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .plus-boton:hover {
+        background-color: #0056b3; /* Color azul más oscuro al pasar el ratón */
+    }
+
+    .resuldaos{
+        overflow-y: auto;
+    }
+    
+}
